@@ -1,0 +1,171 @@
+body,*,*:after,*:before{
+  box-sizing: border-box;
+}
+
+body{ 
+  background: linear-gradient(to right,violet,rgb(121, 84, 224));
+  height: 100vh;
+  width: 100%;
+}
+
+.form{
+  background-color: rgba(240, 227, 227,.2);
+  max-width: 410px;
+  height: 100%;
+  margin: 75px auto;
+  margin-bottom: 10px;
+  border-radius: 5%; 
+  padding: 5px;
+  box-shadow:.3px .3px .3px black ;
+}
+/*forms header */
+.header{
+  height: 100px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1{
+  margin: 0;
+  padding: 0;
+}
+/* form hedaer end */
+
+/* form input fields */
+
+.form_fields{
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 25px;
+  position: relative;
+  
+}
+ .form_fields input:not(input[type=checkbox]){
+  width: 100%;
+  padding: 4px;
+  padding-left: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: rgba(19, 17, 17,.1) 2px solid ;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-transform: capitalize;
+
+ }
+ .form_fields input::placeholder{
+   text-transform: capitalize;
+   font-family:cursive;
+   font-style: normal;
+   font-size: 14px;
+  
+ }
+ .form_fields i{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   display: none;
+}
+.first_name,.last_name{
+  width: 40%;
+  display: inline-block;
+
+}
+.f_l_field_flex{
+  display: flex;
+  justify-content: space-between;
+}
+/* password eye icons */
+.eye_close,.eye_show{
+    right: 35px !important;
+    top: 12px !important;
+    display: block !important;
+}
+.hide{
+  display: none !important;
+
+}
+.eye_show:hover,.eye_close:hover{
+  cursor:pointer;
+}
+/* term and condition */
+.check_fields{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ 
+}
+.check_fields label{
+  font-size:16px;
+  font-family: serif;
+}
+.check_fields label em{
+  text-transform: capitalize;
+  color: blue;
+  font-style: normal;
+}
+
+.check_fields input[type=checkbox]{
+  height: 15px;
+  width: 15px;
+  margin-right:10px;
+}
+
+/* button */
+.button{
+  display: block !important;
+  width: 60%;
+  margin: 10px auto;
+  margin-top: 0;
+  font-family: 'Gugi', cursive;
+  color: white !important;
+  border-radius: 15px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 10px !important;
+}
+.button:hover{
+  color: black !important;
+}
+/* success input fields */
+.success input{
+ border:2px solid rgb(32, 240, 32) !important;
+}
+.success .fa-check-circle{
+  display:block;
+}
+
+/* error fields */
+.form_fields span{
+  margin: 0 0px 0px 15px;
+  padding:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: rgb(255, 14, 14);
+  text-shadow: black 1px 1px 1px;
+  font-weight: 400;
+}
+.error input{
+  border:2px solid rgb(230, 64, 13) !important;
+}
+.error .fa-exclamation-circle{
+  display: block;
+}
+
+/* hovering input fields */
+input:hover{
+  background-color:rgba(228, 224, 18, 0.2);
+  border: gold 2px solid !important;
+  color: white;
+  
+}
+input:hover::placeholder{
+  color: white;
+}
+

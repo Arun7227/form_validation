@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+ 
+     
+
+
+          <div class="container text-center">
+  
+              <form class="form"  autocomplete="off">
+                  <div class="header">
+                      <h1>register</h1>
+                  </div>
+               <div class="f_l_field_flex">
+
+
+                   <div class=" form_fields first_name ">
+                          <input type="text" name="fname"  id="fname" placeholder="first name">
+                          <i class="fas fa-check-circle text-success"></i>
+                          <i class="fas fa-exclamation-circle text-danger"></i>
+                          <span></span>
+                  </div>
+                  <div class="form_fields last_name ">
+                         <input type="text" name="lname"  id="lname" placeholder="last name">
+                         <i class="fas fa-check-circle text-success"></i>
+                         <i class="fas fa-exclamation-circle text-danger"></i>
+                         <span></span>
+                  </div>
+                  
+               </div>   
+                  <div class="form_fields">
+                     <input type="email" name="email"  id="emailid" placeholder="email">
+                     <i class="fas fa-check-circle text-success"></i>
+                     <i class="fas fa-exclamation-circle text-danger"></i>
+                     <span></span>
+                  </div>
+                  <div class="form_fields">
+                     <input type="password" name="pass"  id="pass" placeholder="password">
+                     <i class="fas fa-check-circle text-success"></i>
+                     <i class="fas fa-exclamation-circle text-danger"></i>
+                    <!-- show passowrd and hide password icon -->
+                      <i class="fas fa-eye-slash text-secondary eye_close"></i>
+                      <i class="fas fa-eye text-secondary eye_show hide"></i>
+                     <span></span>
+                  </div>
+                  <div class="form_fields">
+                     <input type="password" name="cpass"  id="cpass" placeholder="conform password">
+                     <i class="fas fa-check-circle text-success"></i>
+                     <i class="fas fa-exclamation-circle text-danger"></i>
+                      <!-- show passowrd and hide password icon -->
+                      <i class="fas fa-eye-slash text-secondary eye_close"></i>
+                      <i class="fas fa-eye text-secondary eye_show hide"></i>
+                     <span></span>
+                  </div>
+                    <div class="form_fields check_fields">
+                        <input type="checkbox" id="checkbox" name="check" value="termsandcondition">
+                        <label for="checkbox">I accept <em>terms of use</em></label>
+                        <span></span>
+                    </div>
+                   <input type="submit" class="btn btn-info button" value="register now" id="submit">
+              </form>
+                    <small class="my_name text-dark">Designed by Arun</small>
+          </div>
+  
+
+    
+    
+    <script src="./jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./form.js"></script>
+
+</body>
+</html>
